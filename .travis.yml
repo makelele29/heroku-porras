@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.11.16"
+  - "4.6.1"
+  - "6.9.0"
+services:
+  - mongodb
+notifications:
+    on_success: never
+    on_failure: never
