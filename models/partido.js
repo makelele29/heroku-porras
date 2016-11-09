@@ -7,7 +7,11 @@ var userSchema = new mongoose.Schema({
   equipo_visitante: String,
   competicion: String,
   año: Number,
-  apuestas:[],
+  apuestas:[{
+		usuario:String,
+		goles_visitante:Number,
+		goles_local:Number
+	}],
   resultado:String
 
 });
