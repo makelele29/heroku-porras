@@ -26,7 +26,8 @@ app.use('/', routes);
 app.use('/users', users);
 // connect to our database
 var uristring =
-    'mongodb://heroku_zv0pxkrz:heroku_zv0pxkrz@ds147487.mlab.com:47487/heroku_zv0pxkrz';
+    process.env.MONGODB_URI ||
+    'mongodb://localhost:27017/porra';
 
 // The http server will listen to an appropriate port, or default to
 // port 5000.
